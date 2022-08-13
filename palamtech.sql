@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 09, 2022 at 06:01 PM
+-- Generation Time: Aug 13, 2022 at 10:31 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.7
 
@@ -59,7 +59,6 @@ CREATE TABLE `casing` (
 --
 
 INSERT INTO `casing` (`id`, `name`, `brand`, `price`) VALUES
-(1, 'AIGO DLM 21 MESH BLACK MATX CASING w/ 4 ARGB FAN', 'AIGO', 229),
 (2, 'AIGO DLM 21 MESH WHITE MATX CASING W/ 4 ARGB FAN', 'AIGO', 229),
 (3, 'AIGO DLM 22 PINK MATX CASING W/ 3 RGB FAN', 'AIGO', 189),
 (4, 'INVASION H-1 MATX CASING W/ 6 ARGB FAN', 'INVASION', 209),
@@ -72,7 +71,23 @@ INSERT INTO `casing` (`id`, `name`, `brand`, `price`) VALUES
 (14, 'LIAN LI O11 DYNAMIC BLACK', 'LIAN LI', 700),
 (15, 'LIAN LI O11 Dynamic Mini White', 'LIAN LI', 776),
 (16, 'SEGOTEP LUX S WHITE', 'SEGOTEP', 201),
-(17, 'COOLER MASTER NR200P White', 'COOLER MASTER', 330);
+(17, 'COOLER MASTER NR200P White', 'COOLER MASTER', 330),
+(24, 'Armaggeddon TRON III Casing (ATX, 7 Expansion Slots, HD audio, 1x USB 3.0 & 2x USB 2.0, 12cm Fan)', 'Armaggedon', 139),
+(25, 'Armaggeddon AERO III Casing (EATX, 7 Expansion Slots, HD audio, 1x USB 3.0 & 2x USB 2.0, 12cm Fan)', 'Armaggedon', 169),
+(26, 'Armaggeddon AIRSTREAM R140 Casing (EATX, 7 Expansion Slots, HD audio, 1x USB 3.0 & 2x USB 2.0, 14cm Fan)', 'Armaggedon', 269),
+(27, 'Armaggeddon AIRSTREAM R200 Casing (EATX, 7 Expansion Slots, HD audio, 1x USB 3.0 & 2x USB 2.0, 14cm Fan)', 'Armaggedon', 329),
+(28, 'Alcatroz Azzura Neo 1 Casing (mATX, 230watts, 2x 2.5\" SSD, 12cm Fan)', 'Alcatroz', 109),
+(29, 'Alcatroz FUTURA BLACK N1000 PRO Casing (ATX, 230watts, 2x 2.5\" SSD, 12cm Fan)', 'Alcatroz', 119),
+(30, 'Alcatroz FUTURA BLACK N5000 PRO Casing (ATX, 230watts, 2x 2.5\" SSD, 12cm Fan)', 'Alcatroz', 129),
+(31, 'Armaggeddon NIMITZ TR8000 Casing (EATX, 7 Expansion Slots, HD audio, 1x USB 3.0 & 2x USB 2.0, 12cm Fan)', 'Armaggedon', 399),
+(32, 'Armaggeddon ULTRO 2 Spyder Casing (EATX, 7 Expansion Slots, HD audio, 1x USB 3.0 & 2x USB 2.0, 12cm Fan)', 'Armaggedon', 999),
+(33, 'Armaggeddon ULTRO 3 Spyder Casing (ATX, 7 Expansion Slots, HD audio, 1x USB 3.0 & 2x USB 2.0, 12cm Fan)', 'Armaggedon', 699),
+(34, 'Cooler Master CM MasterBox NR200P Chassis (Mini-ITX, 3 Expansion Slots, USB 2.5 x1, 120mm fan)', 'COOLER MASTER', 299),
+(35, 'Cooler Master CMP 510 TG Chassis (Mini-ITX, 7 Expansion Slots, USB 2.5 x2, 120mm fan)', 'COOLER MASTER', 229),
+(36, 'Cooler Master HAF 700 EVO Chassis (Mini-ITX, 8 Expansion Slots, USB 2.5 x2, 120mm fan)', 'COOLER MASTER', 1899),
+(37, 'Cooler Master TD500 Mesh White With ARGB Chassis (ATX, 7 Expansion Slots, USB 3.2 x2, 120mm fan)', 'COOLER MASTER', 399),
+(38, 'MSI MAG Vamparic 010 Casing (ATX，mATX，Mini-ITX, 7 Slot, 2 x 3.5\", Mid-Tower)', 'MSI', 279),
+(39, 'MSI MPG Gungnir 100D Casing (EATX, ATX, mATX, Mini-ITX, 7 Slot, 2 x 3.5\", Mid-Tower)', 'MSI', 379);
 
 -- --------------------------------------------------------
 
@@ -105,7 +120,15 @@ INSERT INTO `cpu` (`id`, `name`, `brand`, `price`) VALUES
 (12, 'INTEL I7 12700KF', 'INTEL', 1649),
 (13, 'INTEL I5 12400F (6C/12T)', 'INTEL', 779),
 (14, 'AMD RYZEN 5 3600 (6C/12T)', 'AMD', 669),
-(15, 'INTEL I3 10105F (4C/8T)', 'INTEL', 369);
+(15, 'INTEL I3 10105F (4C/8T)', 'INTEL', 369),
+(17, 'AMD Athlon 3000G PROCESSOR', 'AMD', 259),
+(18, 'Intel Core i3 10105F LGA 1200 PROCESSOR', 'INTEL', 379),
+(19, 'INTEL CORE i3 12100', 'INTEL', 589),
+(20, 'Intel Core i3-10100F LGA 1200 PROCESSOR', 'INTEL', 449),
+(21, 'Intel Core i5 11400F LGA 1200 PROCESSOR', 'INTEL', 849),
+(22, 'Intel Core i5-10400F LGA 1200 PROCESSOR', 'INTEL', 529),
+(23, 'INTEL PENTIUM G6405 LGA 1200 PROCESSOR', 'INTEL', 259),
+(24, 'RYZEN 5 4500 PROCESSOR', 'AMD', 599);
 
 -- --------------------------------------------------------
 
@@ -127,7 +150,92 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`id`, `custEmail`, `custName`, `custPhoneNo`, `custAdd`, `custPass`) VALUES
-(4, 'arif@gmail.com', 'Arif azhar', '234234234234', 'ampang', '123');
+(4, 'arif@gmail.com', 'Arif azhar', '234234234234', 'ampang', '123'),
+(5, 'rizal@gmail.com', 'rizal razak', '0133197258', 'puncak alam', '12345'),
+(6, 'nasa@gmail.com', 'Ahmad Nasaie bin Ibrahim', '0134443232', 'Pengkalan chepa, kota bharu Kelantan', '123'),
+(7, 'nizam@gmail.com', 'Che Azwan Nizam', '0133343324', 'Kota bharu, Kelantan', '123'),
+(8, 'farhan@gmail.com', 'Muhammad Farhan bin Salam', '0111192837', 'Dungun, Terengganu', '123');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `facts`
+--
+
+CREATE TABLE `facts` (
+  `id` int(11) NOT NULL,
+  `custID` int(11) NOT NULL,
+  `pricerange` varchar(255) NOT NULL,
+  `brandprefer` varchar(255) NOT NULL,
+  `reason` varchar(255) NOT NULL,
+  `color` varchar(255) NOT NULL,
+  `performance` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `facts`
+--
+
+INSERT INTO `facts` (`id`, `custID`, `pricerange`, `brandprefer`, `reason`, `color`, `performance`) VALUES
+(1, 4, 'Less than 3000', 'AMD', 'Editing', 'Black', 'Large memory'),
+(2, 4, 'Don\'t mind', 'Don\'t mind', 'Editing', 'Don\'t mind', 'Large memory'),
+(3, 4, 'Don\'t mind', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Fast render'),
+(4, 4, 'Don\'t mind', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(5, 4, 'Don\'t mind', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(6, 4, 'Don\'t mind', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(7, 4, 'Don\'t mind', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(8, 4, 'Don\'t mind', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(9, 4, 'Don\'t mind', 'Don\'t mind', 'Editing', 'Don\'t mind', 'Smooth gaming'),
+(10, 4, '3000-5000', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(11, 4, '3000-5000', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(12, 4, 'Don\'t mind', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(13, 4, 'Don\'t mind', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Smooth gaming'),
+(14, 4, '3000-5000', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(15, 5, '3000-5000', 'AMD', 'Gaming', 'Don\'t mind', 'Fast render'),
+(16, 5, 'Don\'t mind', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(17, 5, 'Don\'t mind', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(18, 5, 'above 5000', 'AMD', 'Gaming', 'Black', 'Large memory'),
+(19, 5, '3000-5000', 'AMD', 'Gaming', 'Black', 'Large memory'),
+(20, 5, 'Don\'t mind', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(21, 5, '3000-5000', 'Don\'t mind', 'Gaming Streaming', 'Don\'t mind', 'Large memory Fast render'),
+(22, 5, 'Less than 3000', 'AMD', 'Office Use', 'Black', 'Large memory'),
+(23, 5, 'Less than 3000', 'AMD', 'Gaming Streaming', 'Black', 'Large memory Fast render'),
+(24, 5, 'Don\'t mind', 'Don\'t mind', 'Gaming Streaming Editing Office Use', 'Don\'t mind', 'Large memory Fast render Smooth gaming'),
+(25, 5, 'Don\'t mind', 'Don\'t mind', 'Gaming Streaming Editing Office Use', 'Don\'t mind', 'Large memory Fast render Smooth gaming'),
+(26, 5, '3000-5000', 'AMD', 'Streaming Editing', 'Black', 'Large memory Fast render'),
+(27, 5, '3000-5000', 'AMD', 'Gaming Editing', 'Black', 'Large memory'),
+(28, 5, '3000-5000', 'AMD', 'Gaming Editing', 'Black', 'Large memory'),
+(29, 5, '3000-5000', 'Don\'t mind', 'Gaming Editing', 'Don\'t mind', 'Large memory'),
+(30, 5, 'Less than 3000', 'Don\'t mind', 'Editing', 'Don\'t mind', 'Large memory'),
+(31, 5, 'Don\'t mind', 'Don\'t mind', 'Streaming', 'Don\'t mind', 'Large memory'),
+(32, 5, 'Don\'t mind', 'Don\'t mind', 'Gaming Office Use', 'Don\'t mind', 'Large memory'),
+(33, 5, 'Don\'t mind', 'Don\'t mind', 'Streaming', 'Don\'t mind', 'Large memory'),
+(34, 5, 'Don\'t mind', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(35, 4, 'Don\'t mind', 'Don\'t mind', 'Streaming', 'Don\'t mind', 'Large memory'),
+(36, 4, '3000-5000', 'INTEL', 'Gaming Streaming', 'Black', 'Fast render Smooth gaming'),
+(37, 4, 'Don\'t mind', 'Don\'t mind', '', 'Don\'t mind', ''),
+(38, 4, '3000-5000', 'INTEL', '', 'Black', ''),
+(39, 4, 'Don\'t mind', 'Don\'t mind', 'Gaming Streaming', 'Don\'t mind', 'Large memory'),
+(40, 4, 'Don\'t mind', 'Don\'t mind', '', 'Don\'t mind', ''),
+(41, 4, 'Don\'t mind', 'Don\'t mind', '', 'Don\'t mind', ''),
+(42, 4, 'Don\'t mind', 'Don\'t mind', '', 'Don\'t mind', ''),
+(43, 4, 'Don\'t mind', 'Don\'t mind', '', 'Don\'t mind', ''),
+(44, 4, 'Don\'t mind', 'Don\'t mind', '', 'Don\'t mind', ''),
+(45, 4, 'Don\'t mind', 'Don\'t mind', '', 'Don\'t mind', ''),
+(46, 4, 'above 5000', 'Don\'t mind', '', 'Don\'t mind', ''),
+(47, 4, 'Don\'t mind', 'Don\'t mind', '', 'Don\'t mind', ''),
+(48, 4, 'Don\'t mind', 'Don\'t mind', '', 'Don\'t mind', ''),
+(49, 4, 'Don\'t mind', 'INTEL', 'Gaming', 'Black', 'Large memory'),
+(50, 4, 'Don\'t mind', 'Don\'t mind', '', 'Don\'t mind', ''),
+(51, 4, '3000-5000', 'INTEL', 'Gaming Streaming Editing Office Use', 'Black', 'Large memory'),
+(52, 4, 'Don\'t mind', 'Don\'t mind', '', 'Don\'t mind', ''),
+(53, 4, 'Don\'t mind', 'Don\'t mind', '', 'Don\'t mind', ''),
+(54, 4, 'Don\'t mind', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(55, 4, 'Don\'t mind', 'Don\'t mind', 'Gaming', 'Don\'t mind', 'Large memory'),
+(56, 4, 'Don\'t mind', 'Don\'t mind', 'Gaming Editing', 'Don\'t mind', 'Large memory'),
+(57, 4, 'Don\'t mind', 'Don\'t mind', '', 'Don\'t mind', ''),
+(58, 4, '3000-5000', 'INTEL', 'Streaming Office Use', 'Don\'t mind', 'Large memory Fast render'),
+(59, 4, 'Don\'t mind', 'Don\'t mind', '', 'Don\'t mind', '');
 
 -- --------------------------------------------------------
 
@@ -142,6 +250,19 @@ CREATE TABLE `feedbacks` (
   `fbDate` date NOT NULL,
   `fbDesc` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `feedbacks`
+--
+
+INSERT INTO `feedbacks` (`fbID`, `custEmail`, `fbType`, `fbDate`, `fbDesc`) VALUES
+(24, 'arif@gmail.com', 'Complain', '2022-06-17', 'The shop is not recommending  accurately'),
+(26, 'arif@gmail.com', 'Suggestions', '2022-07-07', 'My suggestion is the shop should have restock the PC parts to make sure the recommendation could be more accurate'),
+(27, 'arif@gmail.com', 'Review', '2022-07-05', 'The best service ever! always been accurate on recommendation'),
+(28, 'rizal@gmail.com', 'Complain', '2022-07-01', 'Late delivery the PC to my house, should take 2-3 business hour but it already a week, please improve'),
+(29, 'rizal@gmail.com', 'Review', '2022-07-01', 'Even though the delivery rate is slow, but the product quality is superb. Thumbs up Palamtech'),
+(30, 'arif@gmail.com', 'Suggestions', '2022-08-11', 'qwew'),
+(31, 'arif@gmail.com', 'Complain', '2022-08-11', 'Late delivery date, please improve');
 
 -- --------------------------------------------------------
 
@@ -177,7 +298,21 @@ INSERT INTO `gpu` (`id`, `name`, `brand`, `price`) VALUES
 (15, 'COLORFUL RTX 3070 TI NB 8GB GDDR6', 'COLORFUL ', 3800),
 (16, 'ZOTAC RTX 3050 TWIN EDGE OC 8GB GDDR6', 'ZOTAC', 1599),
 (17, 'INNO3D RTX 3070 TI X3 OC 8GB DRR6', 'INNO3D', 3488),
-(18, 'ZOTAC RTX 3070Ti TRINITY OC 8GB GDDR6', 'ZOTAC', 3298);
+(18, 'ZOTAC RTX 3070Ti TRINITY OC 8GB GDDR6', 'ZOTAC', 3298),
+(20, 'AMD RADEON PRO FIREPRO WX5100 Graphics Card (8GB HBM2, PCI-Express 3.0 x16, 256-bit)', 'AMD', 2899),
+(21, 'AMD Radeon Pro WX3100 Graphics Card (4GB GDDR5, PCI-E 3.0 x16, 128 bit, 1 DP 1.4)', 'AMD', 1299),
+(22, 'Asus GT710-1GD5-SL-BRK Graphic Card (NVIDIA GeForce GT 710, 1GB DDR5, PCI Express 2.0, 32-bit)', 'ASUS', 499),
+(23, 'Asus GT710-2GD5-SL-BRK Graphic Card (NVIDIA GeForce GT 710, 2GB DDR5, PCI Express 2.0, 32-bit)', 'ASUS', 549),
+(24, 'MSI GeForce GT 1030 2GD4 LP OC Graphic Card (NVIDIA, 2GB DDR4, PCI-E 3.0, 64-bit)', 'MSI', 619),
+(25, 'MSI GTX 1050 Ti 4GT OCV1 Graphic Card (NVIDIA GeForce GTX 1050Ti, GDDR6, PCI Express x16 3.0, 128-bit)', 'MSI', 1499),
+(26, 'MSI GTX 1650 D6 VENTUS XS OC Graphic Card (NVIDIA GeForce GTX 1650, GDDR6, PCI Express x16 3.0, 128-bit)', 'MSI', 1999),
+(27, 'MSI RTX 3060 GAMING X 12G Graphic Card (NVIDIA GeForce RTX 3060, GDDR6, PCI Express 4.0, 192-bit)', 'MSI', 3519),
+(28, 'MSI RTX 3070 Ti SUPRIM X 8G Graphic Card (NVIDIA GeForce RTX 3070Ti, GDDR6X, PCI Express 4.0, 256-bit)', 'MSI', 5799),
+(29, 'Afox GEFORCE GTX1050TI 4GB GDDR5 128BIT DVI HDMI DP ATX DUAL FAN', 'AFOX', 699),
+(30, 'ARKTEK GTX 1650 Super', 'ARKTEK', 899),
+(31, 'ARKTEK RTX 3060', 'ARKTEK', 1899),
+(32, 'GALAX GeForce GTX 1660 (1-Click OC) 6GB GDDR5', 'GALAX', 999),
+(33, 'GIGABYTE GEFORCE GT 730 2048MB DDR3', 'GIGABYTE', 319);
 
 -- --------------------------------------------------------
 
@@ -198,7 +333,7 @@ CREATE TABLE `mb` (
 
 INSERT INTO `mb` (`id`, `name`, `brand`, `price`) VALUES
 (1, 'GIGABYTE B450M S2H', 'GIGABYTE', 349),
-(2, 'MSI B450M MORTAR MAX', '469', 469),
+(2, 'MSI B450M MORTAR MAX', 'MSI', 469),
 (3, 'ASROCK B450M STEEL LEGEND', 'ASROCK', 389),
 (4, 'GIGABYTE B550 AORUS ELITE', 'GIGABYTE', 750),
 (5, 'GIGABYTE B550M AORUS ELITE', 'GIGABYTE', 549),
@@ -213,7 +348,15 @@ INSERT INTO `mb` (`id`, `name`, `brand`, `price`) VALUES
 (18, 'GIGABYTE B550M AORUS ELITE', 'GIGABYTE', 845),
 (19, 'ASUS B560M-A PRIME', 'ASUS', 358),
 (20, 'MSI B550M PRO-VDH', 'MSI', 399),
-(21, 'GIGABYTE B550M DS3H', 'GIGABYTE', 395);
+(21, 'GIGABYTE B550M DS3H', 'GIGABYTE', 395),
+(23, 'ASROCK B660 STEEL LEGEND', 'ASROCK', 768),
+(24, 'ASROCK H470M HDV LGA 1200 MOTHERBOARD ', 'ASROCK', 299),
+(25, 'ASROCK H510M-HVS MATX', 'ASROCK', 299),
+(26, 'ASUS B460M-A PRIME LGA 1200 MOTHERBOARD (4718017716109)', 'ASUS', 469),
+(27, 'ASROCK X570 TAICHI RAZER EDITION AM4 MOTHERBOARD', 'ASROCK', 1629),
+(28, 'ASUS PRIME H310M-AT LGA 1151 MOTHERBOARD', 'ASUS', 259),
+(29, 'ASUS PRIME H510M-E LGA 1200 MOTHERBOARD', 'ASUS', 399),
+(30, 'MSI A320M A PRO MAX AM4 MOTHERBOARD', 'MSI', 239);
 
 -- --------------------------------------------------------
 
@@ -229,28 +372,36 @@ CREATE TABLE `pcpackage` (
   `ram` int(11) NOT NULL,
   `ssd` int(11) NOT NULL,
   `psu` int(11) NOT NULL,
-  `cpu` int(11) NOT NULL
+  `cpu` int(11) NOT NULL,
+  `reason` varchar(255) NOT NULL,
+  `color` varchar(255) NOT NULL,
+  `performance` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `pcpackage`
 --
 
-INSERT INTO `pcpackage` (`id`, `casing`, `mb`, `gpu`, `ram`, `ssd`, `psu`, `cpu`) VALUES
-(11, 1, 14, 9, 5, 7, 8, 13),
-(12, 1, 8, 10, 6, 8, 8, 2),
-(13, 10, 15, 11, 7, 8, 9, 15),
-(14, 1, 14, 12, 5, 7, 8, 13),
-(15, 1, 21, 10, 6, 8, 10, 2),
-(16, 10, 15, 13, 7, 8, 9, 15),
-(17, 11, 21, 10, 6, 8, 10, 14),
-(18, 12, 16, 15, 5, 7, 11, 7),
-(19, 1, 21, 6, 4, 1, 8, 2),
-(20, 10, 15, 6, 7, 8, 9, 15),
-(21, 15, 17, 18, 2, 3, 15, 10),
-(22, 9, 6, 18, 2, 3, 15, 6),
-(23, 9, 13, 15, 6, 3, 6, 12),
-(24, 12, 8, 3, 4, 8, 9, 9);
+INSERT INTO `pcpackage` (`id`, `casing`, `mb`, `gpu`, `ram`, `ssd`, `psu`, `cpu`, `reason`, `color`, `performance`) VALUES
+(13, 10, 15, 11, 7, 8, 9, 15, 'Office Use', 'Black', 'Office'),
+(16, 10, 15, 13, 7, 8, 9, 15, 'Ofiice Use', 'Black', 'Office'),
+(17, 11, 21, 10, 6, 8, 10, 14, 'Gaming,Streaming', 'White', 'Smooth gaming,Fast render'),
+(18, 12, 16, 15, 5, 7, 11, 7, 'Gaming,Streaming', 'Black', 'Smooth gaming,Fast render'),
+(20, 10, 15, 6, 7, 8, 9, 15, 'Office Use', 'Black', 'Office'),
+(21, 15, 17, 18, 2, 3, 15, 10, 'Gaming,Streaming,Editing', 'White', 'Large memory,Fast render,Smooth gaming'),
+(22, 9, 6, 18, 2, 3, 15, 6, 'Gaming,Streaming,Editing', 'White', 'Large memory,Fast render,Smooth gaming'),
+(23, 9, 13, 15, 6, 3, 6, 12, 'Gaming,Streaming,Editing', 'White', 'Large memory,Fast render,Smooth gaming'),
+(24, 12, 8, 3, 4, 8, 9, 9, 'Office Use', 'Black', 'Office'),
+(39, 27, 17, 21, 14, 5, 18, 9, 'Gaming', 'Black', 'Smooth gaming'),
+(40, 28, 21, 33, 19, 10, 20, 17, 'Office Use', 'Black', 'Office'),
+(41, 25, 25, 20, 14, 13, 4, 20, 'Gaming', 'Black', 'Smooth gaming'),
+(42, 31, 29, 30, 15, 9, 9, 20, 'Editing', 'Black', 'Large memory'),
+(43, 27, 19, 30, 8, 9, 9, 1, 'Editing', 'Black', 'Large memory'),
+(44, 32, 27, 28, 13, 18, 17, 6, 'Gaming,Streaming,Editing', 'Black', 'Large memory,Fast render,Smooth gaming'),
+(45, 15, 27, 28, 13, 9, 16, 10, 'Gaming,Streaming,Editing', 'White', 'Large memory,Fast render,Smooth gaming'),
+(46, 3, 15, 6, 19, 10, 10, 10, 'Streaming,Editing', 'Black', 'Large memory,Fast render'),
+(47, 16, 4, 32, 4, 21, 19, 20, 'Office Use', 'White', 'Office'),
+(48, 11, 23, 1, 5, 3, 14, 14, 'Gaming,Editing', 'White', 'Large memory,Smooth gaming');
 
 -- --------------------------------------------------------
 
@@ -284,7 +435,15 @@ INSERT INTO `psu` (`id`, `name`, `brand`, `price`) VALUES
 (13, 'GIGABYTE P650B 650W 80+ BRONZE', 'GIGABYTE', 309),
 (14, 'SEGOTEP SG-950G 850W 80+ Gold Full Modular', 'SEGOTEP', 385),
 (15, 'SILVERSTONE DA750W 80+ GOLD FULL MODULAR', 'SILVERSTONE', 630),
-(16, 'FSP Dagger 650W Pro SFX 80+ Gold Full Modular', 'FSP', 558);
+(16, 'FSP Dagger 650W Pro SFX 80+ Gold Full Modular', 'FSP', 558),
+(17, 'ASUS ROG STRIX 1000W POWER SUPPLY – GOLD', 'ASUS', 1060),
+(18, 'AIGO GP 650W 80+ BRONZE POWER SUPPLY', 'AIGO', 189),
+(19, 'Cooler Master G600 GOLD 600W 80+ GOLD Power Supply', 'COOLER MASTER', 319),
+(20, 'COOLER MASTER MWE BRONZE V2 500W 80+ POWER SUPPLY', 'COOLER MASTER', 199),
+(21, 'ENERMAX CYBERBRON 500 Watt 80 PLUS Bronze POWER SUPPLY', 'ENERMAX', 219),
+(22, 'FSP Hydro K PRO 750W Bronze', 'FSP', 319),
+(23, 'Silverstone SX500-G 500w 80+ Gold Full Modular Power Supply', 'SILVERSTONE', 439),
+(24, 'VOLTRON BRONZE 235FX', 'VOLTRON', 79);
 
 -- --------------------------------------------------------
 
@@ -312,7 +471,19 @@ INSERT INTO `ram` (`id`, `name`, `brand`, `price`) VALUES
 (6, 'XPG D50 WHITE 16GB (2x8) DDR4 3200MHZ', 'XPG', 353),
 (7, 'ZADAK TWIST 16GB (2x8) 2666MHZ', 'ZADAK', 424),
 (8, 'XPG D41 16GB (2X8) DDR4 3200MHZ', 'XPG', 438),
-(9, 'COLORFUL CVN Guardian 16GB 3200mhz', 'COLORFUL', 225);
+(9, 'COLORFUL CVN Guardian 16GB 3200mhz', 'COLORFUL', 225),
+(11, 'CORSAIR DOMINATOR PLATINUM RGB 16GB (8GBx2) DDR4 DRAM 3200MHz C16 Memory Kit', 'CORSAIR', 729),
+(12, 'CORSAIR VENGEANCE RGB PRO SL 16GB (8GBx2) DDR4 DRAM 3600MHz C18 Memory Kit Black [RYZEN]', 'CORSAIR', 539),
+(13, 'CORSAIR VENGEANCE RGB PRO SL 32GB (2x16GB) DDR4 DRAM 3200MHz C16 Memory Kit – Black', 'CORSAIR', 729),
+(14, 'GEIL Pristine 8GB (8GBx1) 2666MHz', 'GEIL', 159),
+(15, 'GIGABYTE AORUS RGB MEMORY 16GB (2X8GB) DDR4 3333MHZ', 'GIGABYTE', 579),
+(16, 'NETAC SHADOW RGB 16GB (8GBx2) 3600MHZ DDR4 – GREY', 'NETAC SHADOW', 389),
+(17, 'OCPC X3 RGB 8GB (8GBx1) DDR4 3200MHZ – BLACK', 'OCPC', 259),
+(18, 'OCPC X3 RGB 8GB (8GBx1) DDR4 3200MHZ – WHITE', 'OCPC', 249),
+(19, 'PATRIOT VIPER STEEL RGB 8GB (8GB x 1) 3200Mhz', 'PATRIOT VIPER', 168),
+(20, 'V-COLOR DDR4 16GB (8GBx2) 3200MHz SKYWALKER PLUS RGB U-DIMM (SILVER HIS) 1.35 MEMORY', 'V-COLOR', 339),
+(21, 'V-COLOR DDR4 8GB 3200MHZ SKYWALKER PLUS RGB (BLACK H/S)', 'V-COLOR', 179),
+(22, 'XPG SPECTRIX D41 RGB 8GB (8GBx1) DDR4 3200MHZ RAM (GREY HEATSINK)', 'XPG', 198);
 
 -- --------------------------------------------------------
 
@@ -341,7 +512,19 @@ INSERT INTO `ssd` (`id`, `name`, `brand`, `price`) VALUES
 (8, 'PNY CS1030 SSD M.2 NVME 256GB', 'PNY', 249),
 (9, 'XPG SX8200 PRO M.2 NVME 1TB', 'XPG', 529),
 (10, 'KINGSTON NV1 M.2 NVME 500GB', 'KINGSTON', 195),
-(11, 'ZADAK TWSG3 NVMe 512GB', 'ZADAK', 270);
+(11, 'ZADAK TWSG3 NVMe 512GB', 'ZADAK', 270),
+(13, 'Addlink S70 GEN3x4 NMVe 256GB', 'ADDLINK', 265),
+(14, 'Addlink X70 GEN3X4 RGB NVMe 256GB', 'ADDLINK', 289),
+(15, 'CRUCIAL MX500 SATA 2.5 INCH SSD 500GB', 'CRUCIAL', 329),
+(16, 'Crucial P2 M.2 2280 NVMe 1TB PCIe Internal SSD', 'CRUCIAL', 429),
+(17, 'DYNABOOK AE100 SSD 480GB', 'DYNABOOK', 480),
+(18, 'GIGABYTE AORUS GEN4 SSD 500GB w/o Heatsink', 'GIGABYTE', 539),
+(19, 'HP S650 480GB 2.5 INCH SATA SSD', 'HP', 185),
+(20, 'KINGMAX 2.5 INCH SATA III 120GB SSD', 'KINGMAX', 89),
+(21, 'KINGMAX 2.5 INCH SATA III 240GB SSD', 'KINGMAX', 129),
+(22, 'NETAC N600S 2.5 INCH SATA SSD 1TB', 'NETAC', 389),
+(23, 'NETAC N600S 2.5 INCH SATA SSD 256GB', 'NETAC', 159),
+(24, 'PATRIOT P210 2.5INCH SATA SSD 512GB', 'PATRIOT', 239);
 
 -- --------------------------------------------------------
 
@@ -351,9 +534,9 @@ INSERT INTO `ssd` (`id`, `name`, `brand`, `price`) VALUES
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `role` varchar(255) NOT NULL
+  `email` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `role` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -361,8 +544,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `role`) VALUES
-(8, 'arif@gmail.com', '123', 'customer'),
-(9, 'admin@gmail.com', '12345', 'admin');
+(1, 'nasa@gmail.com', '123', 'customer'),
+(2, 'nizam@gmail.com', '123', 'customer'),
+(3, 'farhan@gmail.com', '123', 'customer');
 
 --
 -- Indexes for dumped tables
@@ -392,6 +576,13 @@ ALTER TABLE `cpu`
 ALTER TABLE `customer`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `custEmail` (`custEmail`);
+
+--
+-- Indexes for table `facts`
+--
+ALTER TABLE `facts`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `facts_ibfk_1` (`custID`);
 
 --
 -- Indexes for table `feedbacks`
@@ -463,71 +654,83 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `casing`
 --
 ALTER TABLE `casing`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT for table `cpu`
 --
 ALTER TABLE `cpu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `facts`
+--
+ALTER TABLE `facts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `feedbacks`
 --
 ALTER TABLE `feedbacks`
-  MODIFY `fbID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `fbID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `gpu`
 --
 ALTER TABLE `gpu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `mb`
 --
 ALTER TABLE `mb`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `pcpackage`
 --
 ALTER TABLE `pcpackage`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `psu`
 --
 ALTER TABLE `psu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `ram`
 --
 ALTER TABLE `ram`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `ssd`
 --
 ALTER TABLE `ssd`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `facts`
+--
+ALTER TABLE `facts`
+  ADD CONSTRAINT `facts_ibfk_1` FOREIGN KEY (`custID`) REFERENCES `customer` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `feedbacks`
